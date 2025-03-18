@@ -17,7 +17,7 @@ namespace EventPlus.Domains
         public Guid IdUsuario { get; set; }
 
         [ForeignKey("IdUsuario")]
-        public Usuario? Usuario { get; set; }
+        public Usuarios? Usuario { get; set; }
 
 
         //ref.tabela Evento
@@ -25,7 +25,7 @@ namespace EventPlus.Domains
         public Guid IdEvento { get; set; }
 
         [ForeignKey("IdEvento")]
-        public Evento? Evento { get; set; }
+        public Eventos? Evento { get; set; }
 
     }
 }
